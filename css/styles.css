@@ -728,7 +728,7 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
-  color: var(--navy-blue);
+  color: #2e2f42;
   font-family: "Roboto", sans-serif;
   margin-top: 23.61px;
   margin-bottom: 16px;
@@ -770,7 +770,7 @@ button {
 }
 
 .modal-field {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 
 .icon-input {
