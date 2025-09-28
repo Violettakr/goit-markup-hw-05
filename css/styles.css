@@ -773,6 +773,10 @@ button {
   margin-bottom: 8px;
 }
 
+modal-comment {
+  margin-bottom: 16px;
+}
+
 .icon-input {
   fill: var(--navy-blue);
   position: absolute;
