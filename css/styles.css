@@ -845,8 +845,8 @@ button {
 }
 
 .modal-bth {
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
   flex-direction: row;
   gap: 10px;
   display: block;
@@ -856,8 +856,8 @@ button {
   line-height: 1.5;
   letter-spacing: 0.04em;
   border-radius: 4px;
-  margin: 0 auto;
   padding: 16px 32px;
+  margin: 0 auto;
   color: #ffffff;
   background-color: #4d5ae5;
   border: none;
@@ -867,4 +867,8 @@ button {
 .modal-close:hover .modal-button,
 .modal-close:focus .modal-button {
   fill: #ffffff;
+}
+
+span.modal-check-box {
+  display: inline-flex;
 }
