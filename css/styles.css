@@ -788,10 +788,22 @@ button {
 
 .modal-textarea {
   height: 120px;
-  border: 1px solid var(--navy-blue-modal);
+  border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   padding: 8px 16px;
   resize: none;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-textarea:focus {
+  border-color: #4d5ae5;
+}
+
+.modal-field-box {
+  margin-bottom: 24px;
 }
 
 .modal-check:checked + .label-check > .modal-check-box {
@@ -803,7 +815,7 @@ button {
 .label-check {
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--light-slate);
   display: flex;
@@ -818,7 +830,7 @@ button {
 }
 
 .modal-check-box {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 16px;
@@ -826,5 +838,21 @@ button {
   margin-right: 8px;
   fill: transparent;
   border-radius: 2px;
-  border: 1px solid var(--navy-blue-modal);
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-bth {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  background-color: #4d5ae5;
+  border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
