@@ -54,7 +54,7 @@
         
         <section class="features">
             <div class="container container-narrow">
-                <h2 class="visually-hidden"></h2>
+                <h2 class="visually-hidden section-title"></h2>
                 <ul class="features-list">
                     <li class="features-item"> 
                         <div class="container-features-icon">
@@ -119,7 +119,7 @@
 
         <section class="team">
             <div class="container">
-            <h2 class="our-team">Our Team</h2>
+            <h2 class="our-team section-title">Our Team</h2>
             <ul class="team-list">
                 <li class="team-item"><img src="images/img9.jpg" alt="Mark Guerrero" width="264">
                     <div class="container-team">
@@ -288,7 +288,7 @@
 
         <section class="portfolio">
             <div class="container container-narrow">
-                <h2 class="portfolio-title">Our Portfolio</h2>
+                <h2 class="portfolio-title section-title">Our Portfolio</h2>
                     <ul class="portfolio-list">
                         <li class="portfolio-item">
                             <div class="taste-item">
@@ -397,6 +397,7 @@
             </div>
 
             <div class="footer-right">
+                <div class="footer-social-wrap">
                 <p class="footer-social">Social media</p>
                 <ul class="socials socials-footer">
                 <li class="footer-list">
@@ -429,7 +430,141 @@
                 </li>
             </ul>
             </div>
+            <div class="footer-subscribe">
+                <p class="footer-subscribe-title">Subscribe</p>
+            <form class="footer-form">
+                <label aria-label="footer-email">
+                    <input 
+                        type="email" 
+                        placeholder="E-mail"
+                        class="footer-input">
+                </label>
+                <button type="submit" class="footer-form-btn">Subscribe
+                    <svg 
+                        class="btn-icon" 
+                        width="24" 
+                        height="20">
+                        <use href="./images/icons.svg#icon-icon-send"></use>
+                    </svg>
+                </button>
+            </form>
+            </div>
         </div>
     </footer>
+        <div class="backdrop">
+            <div class="modal">
+                <button type="button" class="modal-close">
+                    <svg class="modal-button" width="8" height="8">
+                        <use href="./images/icons.svg#icon-close-black-18dp-2-1-1"></use>
+                    </svg>
+                </button>
+                <p class="section-title">Leave your contacts and we will call you back</p>
+                <form class="modal-form">
+                    <div class="modal-field">
+                        <label 
+                        for="user-name" 
+                        class="modal-input-lebel">Name</label>
+                        <div class="input-wrapper">
+                        <input type="text" 
+                        class="modal-input modal-element" 
+                        placeholder="Your name"
+                        name="user-name" 
+                        id="user-name"
+                        required
+                        />
+                        <svg class="icon-input"
+                        width="18"
+                        height="18"
+                        >
+                            <use href="./images/icons.svg#icon-Vector-2-1"></use>
+                        </svg>
+                        </div>
+                    </div>
+                    <div class="modal-field">
+                        <label 
+                            for="user-number" 
+                            class="modal-input-lebel"
+                            >Phone</label
+                            >
+                    <div class="input-wrapper">
+                    <input 
+                        type="text" 
+                        class="modal-input modal-element" 
+                        placeholder="Your number" 
+                        name="user-number" 
+                        id="user-number"
+                        required
+                    />
+                    <svg 
+                        class="icon-input"
+                        width="18"
+                        height="24"
+                    >
+                        <use href="./images/icons.svg#icon-phone-black-18dp-1-1"></use>
+                    </svg>
+                    </div>
+                    </div>
+                    <div class="modal-field">
+                        <label 
+                            for="user-email" 
+                            class="modal-input-lebel"
+                        >Email</label
+                        >
+                    <div class="input-wrapper">
+                    <input 
+                        type="text" 
+                        class="modal-input modal-element" 
+                        placeholder="Your email" 
+                        name="user-email"
+                        id="user-email"
+                        required
+                    />
+                    <svg 
+                        class="icon-input"
+                        width="18"
+                        height="24"
+                    >
+                        <use href="./images/icons.svg#icon-email-black-18dp-1-1"></use>
+                    </svg>
+                    </div>
+                </div>
+                <div class="modal-field">
+                    <label for="user-email" class="modal-input-lebel">Comment</label>
+                     <div class="input-wrapper">
+                    <textarea
+                        name="user-text"
+                        id="user-text"
+                        class="modal-textarea modal-element"
+                        placeholder="Text input"
+                        ></textarea>
+                    <div class="modal-field">
+                        <input type="checkbox" 
+                            name="policy" 
+                            id="policy" 
+                            class="modal-check visually-hidden"
+                            value="accepted"
+                            />
+                        <label 
+                            for="policy" 
+                            class="label-check"
+                        ><span class="modal-check-box">
+                            <svg class="check-icon"  
+                            width="10"
+                            height="8"
+                            >
+                                <use href="./images/icons.svg#icon-Vector-3"></use>
+                            </svg>
+                        </span>
+                        I accept the terms and conditions of the <a href="">Privacy Policy</a></label>
+                    </div>
+                    <button 
+                    type="submit"
+                    disabled
+                    >
+                    Send
+                    </button>
+                </form>
+            </div>
+        </div>
 </body>
 </html>
