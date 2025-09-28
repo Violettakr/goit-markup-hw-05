@@ -787,6 +787,7 @@ button {
 }
 
 .modal-textarea {
+  font-size: 12px;
   height: 120px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
