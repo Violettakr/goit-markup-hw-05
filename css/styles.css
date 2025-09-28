@@ -773,7 +773,7 @@ button {
   margin-bottom: 8px;
 }
 
-modal-comment {
+.modal-comment {
   margin-bottom: 16px;
 }
 
@@ -860,4 +860,9 @@ modal-comment {
   background-color: #4d5ae5;
   border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close:hover .modal-button,
+.modal-close:focus .modal-button {
+  fill: #ffffff;
 }
